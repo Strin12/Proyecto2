@@ -1,0 +1,50 @@
+<ion-content>
+  <div id="header">
+    <h1>Login</h1>
+    <img src="assets/images/favicon.png" />
+  </div>
+
+  <form id="form">
+    <ion-item class="ion-margin-bottom">
+      <ion-input type="text"
+       name="email"
+      parttern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+      placeholder="Ingrese su email"
+      required></ion-input>
+    </ion-item>
+    
+    <ion-item class="ion-margin-bottom">
+    <ion-input type="password"
+    name="password"
+    maxlength=9
+    placeholder="Ingrese su contraseña"
+    required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" shape="round">Login</ion-button>
+  </form>
+
+  <div id="form">
+  <ion-list>
+    <ion-item class="ion-margin-bottom">
+      <ion-label>¿Recordar contraseña?</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+      <ion-item class="ion-margin-bottom">
+        <ion-label text-center onclick="true" routerLink="/restablecer" color="primary">¿Olvidaste tu contraseña?</ion-label>
+        <ion-icon name="key-outline" slot="start"></ion-icon>
+      </ion-item>
+
+      <ion-item class="ion-margin-bottom">
+        <ion-label color="primary" onclick="true" routerLink="/">¿No tienes una cuenta? Registrate aquí.</ion-label>
+      </ion-item>
+
+      <ion-button expand="block" shape="round" color="danger">
+      <ion-icon name="logo-google" slot="start"></ion-icon>          
+          Google
+        </ion-button>
+</div>
+
+  </ion-content>
