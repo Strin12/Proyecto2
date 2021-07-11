@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { ModalPerfilComponent } from './modal-perfil/modal-perfil.component';
 import { DatosPerfilComponent } from './datos-perfil/datos-perfil.component';
 import { DatosDomicilioComponent } from './datos-domicilio/datos-domicilio.component';
+import { PresionComponent } from './presion/presion.component';
 
 
 @NgModule({
@@ -15,14 +16,16 @@ import { DatosDomicilioComponent } from './datos-domicilio/datos-domicilio.compo
     MenuComponent,
     ModalPerfilComponent,
     DatosPerfilComponent,
-    DatosDomicilioComponent
+    DatosDomicilioComponent,
+    PresionComponent
   ],
   exports:[
     HeaderComponent,
     MenuComponent,
     ModalPerfilComponent,
     DatosPerfilComponent,
-    DatosDomicilioComponent
+    DatosDomicilioComponent,
+    PresionComponent
   ],
   imports: [
     CommonModule,
