@@ -1,0 +1,23 @@
+[
+    {
+        "icon": "person",
+        "name": "Perfil Usuario",
+        "redirecTo": "/tabs/perfil"
+    },
+    {
+        "icon": "file-tray-stacked-sharp",
+        "name": "Historial médico",
+        "redirecTo": "/tabs/listaexpedientes"
+    },
+    {
+        "icon": "document-text-sharp",
+        "name": "Agregar Nota",
+        "redirecTo": "/tabs/agregar-nota"
+    },
+    {
+        "icon": "calendar",
+        "name": "Proximas citas",
+        "redirecTo": "/tabs/calendario"
+    }
+]
+

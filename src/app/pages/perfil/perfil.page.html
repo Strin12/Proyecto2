@@ -1,0 +1,133 @@
+<app-header titulo="Mi perfil"></app-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="header">
+<br>
+    <img src="assets/images/user.png" />
+    <ion-grid>
+      <ion-row>
+    <ion-col style="align-items: center">
+      <ion-button *ngIf="!dato">Editar perfil</ion-button>
+      <ion-button *ngIf="dato">Editar domicilio</ion-button>
+      <ion-button *ngIf="!dato" (click)="ChangeDomicilie()">Domicilio</ion-button>
+      <ion-button *ngIf="dato" (click)="ChangePerfil()">Mi perfil</ion-button>
+    </ion-col>
+    </ion-row>
+    </ion-grid>
+  </div>
+<br>
+  <div id="card" *ngIf="!dato">
+  <ion-grid id="form">
+      <ion-row class="align-center">
+          <ion-col size="11">
+              <ion-list>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>prueba</b>
+                      </ion-label>
+                      <ion-input  slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Ortiz</b></ion-label>
+                      <ion-input name="name" slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Pérez</b></ion-label>
+                      <ion-input name="surname" slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>BAPEJUDN99GW</b></ion-label>
+                      <ion-input  slot="end" disabled></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>21</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>756682</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>282018012</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Av. S/N</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Covadonga</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+              </ion-list>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</div>
+
+
+<div id="card" *ngIf="dato">
+  <ion-grid id="form">
+      <ion-row class="align-center">
+          <ion-col size="11">
+              <ion-list>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Bret</b>
+                      </ion-label>
+                      <ion-input  slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Ortiz</b></ion-label>
+                      <ion-input name="name" slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Pérez</b></ion-label>
+                      <ion-input name="surname" slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>BAPEJUDN99GW</b></ion-label>
+                      <ion-input  slot="end" disabled></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>21</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>756682</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>282018012</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Av. S/N</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="black" class="large-title"><b>Covadonga</b></ion-label>
+                      <ion-input slot="end" disabled>
+                      </ion-input>
+                  </ion-item>
+              </ion-list>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</div>
+
+</ion-content>

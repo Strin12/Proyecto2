@@ -4,16 +4,19 @@ import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { ModalPerfilComponent } from './modal-perfil/modal-perfil.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    ModalPerfilComponent
   ],
   exports:[
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    ModalPerfilComponent
   ],
   imports: [
     CommonModule,
